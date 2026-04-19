@@ -3,99 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Mark 6 Stats</title>
+    <style>
+        body {
+            background-color: black;
+            color: #EEE;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .logo { width: 120px; margin: 20px auto; }
+        .brand { font-size: 22px; margin-bottom: 10px; }
+        .intro { max-width: 800px; margin: 0 auto 40px; line-height: 1.8em; }
+        .section { margin: 40px auto; max-width: 850px; }
+        .section hr { width: 30%; display: inline-block; vertical-align: middle; border: 0; border-top: 1px solid #666; }
+        .section img.icon { width: 50px; vertical-align: middle; margin: 0 10px; }
+        .images img { width: 45%; max-width: 450px; margin: 5px; }
+        .section ol { text-align: left; margin-top: 15px; }
+        .section li { margin-bottom: 12px; }
+        .footer { margin-top: 40px; font-size: 14px; }
+        .footer a { color: #EEE; text-decoration: none; margin: 0 8px; }
+        .footer a:hover { text-decoration: underline; }
+        .copyright { margin-top: 10px; font-size: 12px; color: #AAA; }
+    </style>
 </head>
-<body style="background-color:black; color:#AAA; padding: 20px 20px; text-align:center;">
-    <img src="images/site_logo.webp" alt="Mark 6 Stats Logo">
-    <div>Mark 6 Stats</div>
-    <div>
+<body>
+    <img src="images/site_logo.webp" alt="Mark 6 Stats Logo" class="logo">
+    <div class="brand">Mark 6 Stats</div>
+    <div class="intro">
         Mark 6 Stats is built on a decentralized concept, integrating all records into a local data model for statistical queries, number filtering, records management, and automatic prize checking.<br>
         Mark 6 Stats 六合彩統計助手 基於去中心化理念，將所有紀錄整合為本地數據模型，提供快速統計查詢、號碼篩選、記錄管理與自動兌獎功能。
-        
     </div>
-    <div style="margin-top:40px; text-align:center;">
 
-    <div style="margin:20px auto; max-width: 850px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <img src="images/icon1.webp" alt="Icon 1" style="vertical-align:middle; margin:0 10px;width: 66px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <div style="margin-top:15px;">
-            <img src="images/intro_1-1.webp" alt="Intro 1-1" style="width:45%; margin:5px;  max-width: 450px;">
-            <img src="images/intro_1-2.webp" alt="Intro 1-2" style="width:45%; margin:5px;  max-width: 450px;">
+    <!-- 第一組 -->
+    <div class="section">
+        <hr><img src="images/icon1.webp" alt="Icon 1" class="icon"><hr>
+        <div class="images">
+            <img src="images/intro_1-1.webp" alt="Intro 1-1">
+            <img src="images/intro_1-2.webp" alt="Intro 1-2">
         </div>
-        <ol style="text-align:left;">
-            <li>Tap numbers to mark them as ignored or locked. Press the main button to generate multiple random numbers, choose whether to allow duplicates, and save results for automatic prize checking at draw time.
-                <br>點擊號碼可設定為忽略或鎖定，按主按鍵即可生成多組隨機號碼，可選擇是否允許重複，並能記錄以供系統在開獎時自動兌獎。
-            </li>
-            <li>Switch to the simple statistics view to see the frequency of each number, adjust the number of periods, and use tapping to filter.
-                <br>切換至簡單統計版面，調整期數即可查看各號碼的出現頻率，透過點擊進行篩選。
-            </li>
+        <ol>
+            <li>Tap numbers to mark them as ignored or locked. Press the main button to generate multiple random numbers, choose whether to allow duplicates, and save results for automatic prize checking.<br>點擊號碼可設定為忽略或鎖定，按主按鍵即可生成多組隨機號碼，可選擇是否允許重複，並能記錄以供系統在開獎時自動兌獎。</li>
+            <li>Switch to the simple statistics view to see the frequency of each number, adjust the number of periods, and use tapping to filter.<br>切換至簡單統計版面，調整期數即可查看各號碼的出現頻率，透過點擊進行篩選。</li>
         </ol>
     </div>
 
-    <div style="margin:20px auto; max-width: 850px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <img src="images/icon2.webp" alt="Icon 2" style="vertical-align:middle; margin:0 10px;width: 66px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <div style="margin-top:15px;">
-            <img src="images/intro_2-1.webp" alt="Intro 2-1" style="width:45%; margin:5px;  max-width: 450px;">
-            <img src="images/intro_2-2.webp" alt="Intro 2-2" style="width:45%; margin:5px;  max-width: 450px;">
+    <!-- 第二組 -->
+    <div class="section">
+        <hr><img src="images/icon2.webp" alt="Icon 2" class="icon"><hr>
+        <div class="images">
+            <img src="images/intro_2-1.webp" alt="Intro 2-1">
+            <img src="images/intro_2-2.webp" alt="Intro 2-2">
         </div>
-        <ol style="text-align:left;">
-            <li>By running a local database, past draw records can be quickly retrieved and instantly compared, showing similar records of fourth prize or above.
-                <br>由於運行本地數據庫，可迅速翻查歷年開獎紀錄，並即時比對，顯示四獎以上的相似紀錄。
-            </li>
-            <li>Each draw record comes with a full statistical analysis. You can switch between draw numbers or include special numbers in the statistics, and the results are instantly clear.
-                <br>對每一個開獎紀錄都提供全面統計分析，可切換至開獎號碼或包括特別號碼的統計，結果即時一目了然。
-            </li>
+        <ol>
+            <li>By running a local database, past draw records can be quickly retrieved and instantly compared, showing similar records of fourth prize or above.<br>由於運行本地數據庫，可迅速翻查歷年開獎紀錄，並即時比對，顯示四獎以上的相似紀錄。</li>
+            <li>Each draw record comes with a full statistical analysis. You can switch between draw numbers or include special numbers in the statistics.<br>對每一個開獎紀錄都提供全面統計分析，可切換至開獎號碼或包括特別號碼的統計，結果即時一目了然。</li>
         </ol>
     </div>
 
-    <div style="margin:20px auto; max-width: 850px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <img src="images/icon3.webp" alt="Icon 3" style="vertical-align:middle; margin:0 10px;width: 66px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <div style="margin-top:15px;">
-            <img src="images/intro_3-1.webp" alt="Intro 3-1" style="width:45%; margin:5px;  max-width: 450px;">
-            <img src="images/intro_3-2.webp" alt="Intro 3-2" style="width:45%; margin:5px;  max-width: 450px;">
+    <!-- 第三組 -->
+    <div class="section">
+        <hr><img src="images/icon3.webp" alt="Icon 3" class="icon"><hr>
+        <div class="images">
+            <img src="images/intro_3-1.webp" alt="Intro 3-1">
+            <img src="images/intro_3-2.webp" alt="Intro 3-2">
         </div>
-        <ol style="text-align:left;">
-            <li>You can freely select the year, month, or range of draws to view detailed statistical results. Additional specialized statistics include the highest prize, the largest number of winners, and the most similar records.
-                <br>隨意按年、月或每期範圍，即可查看詳細統計結果。另有專項統計，包括最高獎金、最多人中獎，以及最多相似紀錄。
-            </li>
-            <li>Each range contains plenty of interesting data, inviting you to explore the fascinating combinations created by random numbers.
-                <br>每個範圍都有不少有趣的數據，等你去發現隨機號碼所產生的各種奇妙組合。
-            </li>
+        <ol>
+            <li>You can freely select the year, month, or range of draws to view detailed statistical results.<br>隨意按年、月或每期範圍，即可查看詳細統計結果。另有專項統計，包括最高獎金、最多人中獎，以及最多相似紀錄。</li>
+            <li>Each range contains plenty of interesting data, inviting you to explore the fascinating combinations created by random numbers.<br>每個範圍都有不少有趣的數據，等你去發現隨機號碼所產生的各種奇妙組合。</li>
         </ol>
     </div>
 
-    <div style="margin:20px auto; max-width: 850px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <img src="images/icon4.webp" alt="Icon 4" style="vertical-align:middle; margin:0 10px; width: 66px;">
-        <hr style="width:30%; display:inline-block; vertical-align:middle;">
-        <div style="margin-top:15px;">
-            <img src="images/intro_4-1.webp" alt="Intro 4-1" style="width:45%; margin:5px;  max-width: 450px;">
-            <img src="images/intro_4-2.webp" alt="Intro 4-2" style="width:45%; margin:5px;  max-width: 450px;">
+    <!-- 第四組 -->
+    <div class="section">
+        <hr><img src="images/icon4.webp" alt="Icon 4" class="icon"><hr>
+        <div class="images">
+            <img src="images/intro_4-1.webp" alt="Intro 4-1">
+            <img src="images/intro_4-2.webp" alt="Intro 4-2">
         </div>
-        <ol style="text-align:left;">
-            <li>The system will automatically check your records at draw time and clearly display each winning number along with the corresponding prize.
-                <br>系統會根據您的記錄，在開獎時間自動兌獎，並清楚顯示每個中獎號碼及其所獲獎項。
-            </li>
-            <li>All data will only be stored on your device. For extra security, you may also choose to back it up to Google Drive. There are only three simple operations: upload, download, and delete.
-                <br>所有數據只會儲存在您的手機內，為保險起見，您亦可選擇備份到 Google Drive。只有三個簡單操作：上傳、下載、刪除。
-            </li>
+        <ol>
+            <li>The system will automatically check your records at draw time and clearly display each winning number.<br>系統會根據您的記錄，在開獎時間自動兌獎，並清楚顯示每個中獎號碼及其所獲獎項。</li>
+            <li>All data will only be stored on your device. For extra security, you may also choose to back it up to Google Drive.<br>所有數據只會儲存在您的手機內，為保險起見，您亦可選擇備份到 Google Drive。只有三個簡單操作：上傳、下載、刪除。</li>
         </ol>
     </div>
 
-
-    <div>
+    <div class="footer">
         This app uses Google OAuth for login to securely access your account.<br>
-        此應用程式使用 Google OAuth 進行登錄，以安全地存取您的帳戶。<br>
-        <a href="https://app.mark6stats.com/privacy-policy.html" style="color:#AAA;">Privacy Policy</a>
-        <span style="color:white;"> | </span>
-        <a href="https://app.mark6stats.com/terms-of-service.html" style="color:#AAA;">Terms of Service</a>
-    </div>
-    <div style="margin-top:10px; font-size:12px; color:#AAA;">
-        © 2026 Mark 6 Stats. All rights reserved.
+        此應用程式使用 Google OAuth 進行登錄，以安全地存取您的帳戶。<br><br>
+        <a href="https://app.mark6stats.com/privacy-policy.html">Privacy Policy</a> |
+        <a href="https://app.mark6stats.com/terms-of-service.html">Terms of Service</a>
+        <div class="copyright">© 2026 Mark 6 Stats. All rights reserved.</div>
     </div>
 </body>
 </html>
