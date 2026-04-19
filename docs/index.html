@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark 6 Stats</title>
     <style>
-        /* 頁面背景與配置 */
         body {
             height: 100vh;
             display: flex;
@@ -13,10 +12,10 @@
             background: linear-gradient(to bottom, #444444, #000000);
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: white;
             overflow: hidden;
         }
 
-        /* 主內容區域 */
         .container {
             flex: 1;
             display: flex;
@@ -26,49 +25,49 @@
             text-align: center;
         }
 
-        .image {
+        .logo {
             width: 100px;
             height: 100px;
-            filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.3));
-            margin-bottom: 20px;
+            filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.2));
+            margin-bottom: 15px;
         }
 
-        .text {
-            color: white;
+        .brand-name {
             font-size: 18px;
-            font-weight: 500;
             letter-spacing: 1px;
         }
 
-        /* 頁尾連結區域 - 驗證重點 */
+        /* 頁尾連結樣式 */
         .footer {
-            padding: 30px 20px;
+            padding-bottom: 30px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.3);
         }
 
-        .footer-links {
+        .footer-nav {
             margin-bottom: 10px;
         }
 
-        /* 確保連結文字清晰且易於點擊 */
-        .footer a {
-            color: #cccccc;
-            font-size: 14px;
+        .footer-nav a {
+            color: #aaaaaa;
+            font-size: 13px;
             text-decoration: none;
-            margin: 0 15px;
-            display: inline-block; /* 增加點擊區域 */
+            margin: 0 10px;
             transition: color 0.2s;
         }
 
-        .footer a:hover {
+        .footer-nav a:hover {
             color: #ffffff;
             text-decoration: underline;
         }
 
-        .copyright {
-            color: #666666;
+        .divider {
+            color: #555555;
             font-size: 12px;
+        }
+
+        .copyright {
+            color: #555555;
+            font-size: 11px;
             margin-top: 8px;
         }
     </style>
@@ -76,14 +75,19 @@
 <body oncontextmenu="return false;">
 
     <div class="container">
-        <img src="images/site_logo.webp" alt="Mark 6 Stats Logo" class="image">
-        <div class="text">Mark 6 Stats</div>
+        <img src="images/site_logo.webp" alt="Mark 6 Stats" class="logo">
+        <div class="brand-name">Mark 6 Stats</div>
     </div>
 
     <footer class="footer">
-        <nav class="footer-links">
-            <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank" rel="noopener">Privacy Policy (隱私權政策)</a>
-            <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank" rel="noopener">Terms of Service (服務條款)</a>
+        <nav class="footer-nav">
+            <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank" rel="noopener">
+                Privacy Policy 隱私權政策
+            </a>
+            <span class="divider">|</span>
+            <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank" rel="noopener">
+                Terms of Service 服務條款
+            </a>
         </nav>
         <div class="copyright">
             &copy; 2026 Mark 6 Stats. All rights reserved.
