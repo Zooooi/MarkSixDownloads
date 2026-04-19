@@ -118,7 +118,12 @@
     </div>
 
     <div class="footer">
-        <div class="copyright">© 2022-2026 Mark 6 Stats. All rights reserved.</div>
+        <div class="copyright">
+            © 2022-<span id="current-year"></span> Mark 6 Stats. All rights reserved.
+        </div>
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
     </div>
 </body>
 </html>
