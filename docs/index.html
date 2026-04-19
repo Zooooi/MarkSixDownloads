@@ -19,12 +19,23 @@
         .image {
             width: 100px;
             height: 100px;
-            filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.2)); /* 30% 的陰影 */
+            filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.2));
         }
         .text {
             color: white;
             font-size: 12px;
             margin-top: 10px;
+        }
+        .link {
+            margin-top: 15px;
+        }
+        .link a {
+            color: #aaaaaa;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -32,6 +43,11 @@
     <div class="container">
         <img src="images/site_logo.webp" alt="Logo" class="image">
         <div class="text">Mark Six Stats</div>
+        <div class="link">
+            <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank">
+                <div>服務條款與隱私政策</div> <div>Terms of Service and Privacy Policy</div>
+            </a>
+        </div>
     </div>
 </body>
 </html>
