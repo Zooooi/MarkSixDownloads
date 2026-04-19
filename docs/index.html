@@ -8,6 +8,7 @@
         body {
             height: 100vh;
             display: flex;
+            flex-direction: column; /* 垂直排列 */
             justify-content: center;
             align-items: center;
             background: linear-gradient(to bottom, grey, black);
@@ -15,6 +16,10 @@
         }
         .container {
             text-align: center;
+            flex: 1; /* 讓內容佔滿中間 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .image {
             width: 100px;
@@ -26,15 +31,15 @@
             font-size: 12px;
             margin-top: 10px;
         }
-        .link {
-            margin-top: 15px;
+        .footer {
+            margin-bottom: 10px;
         }
-        .link a {
+        .footer a {
             color: #aaaaaa;
             font-size: 12px;
             text-decoration: none;
         }
-        .link a:hover {
+        .footer a:hover {
             text-decoration: underline;
         }
     </style>
@@ -43,11 +48,11 @@
     <div class="container">
         <img src="images/site_logo.webp" alt="Logo" class="image">
         <div class="text">Mark Six Stats</div>
-        <div class="link">
-            <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank">
-                服務條款與隱私政策 / Terms of Service and Privacy Policy
-            </a>
-        </div>
+    </div>
+    <div class="footer">
+        <a href="https://app.mark6stats.com/terms-and-privacy.html" target="_blank">
+            服務條款與隱私政策 / Terms of Service and Privacy Policy
+        </a>
     </div>
 </body>
 </html>
