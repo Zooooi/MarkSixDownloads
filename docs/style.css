@@ -17,15 +17,19 @@ body {
     border-radius: 12px;
     background-color: #111;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-    text-align: center; /* 預設居中，適合首頁 */
+    text-align: center;
 }
 
-/* 條款與政策頁面專用的靠左對齊類 */
-.text-left {
-    text-align: left;
-}
+.text-left { text-align: left; }
 
-/* 標題設定 */
+/* 標題與品牌 */
+.brand {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
 h1 { color: #fff; font-size: 24px; margin-bottom: 10px; }
 h2 { 
     color: #eee; 
@@ -52,22 +56,29 @@ a:hover { color: #aaa; text-decoration: underline; }
 .header-line { flex: 1; height: 1px; background-color: #444; }
 .logo { width: 120px; margin: 0 30px; }
 
-/* 內容區塊 (首頁用) */
+/* 內容區塊 */
 .intro { max-width: 800px; margin: 0 auto 20px; font-size: 15px; }
 .section { margin: 40px auto; }
 .section img.icon { width: 50px; vertical-align: middle; margin: 0 10px; }
-.images img { width: 45%; max-width: 450px; margin: 5px; border-radius: 8px; }
+
+/* --- 圖片排版核心改良 --- */
+.images {
+    display: flex;          /* 使用 Flex 佈局 */
+    justify-content: center;
+    gap: 10px;             /* 圖片之間的間距 */
+    margin: 15px 0;
+}
+.images img {
+    width: 48%;            /* 橫排時佔接近一半 */
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
 ol { text-align: left; padding-inline-start: 2em; }
 li { margin-bottom: 12px; font-size: 15px; }
-
-/* 中英對照樣式 */
-.lang-en {
-    color: #888;
-    font-style: italic;
-    display: block;
-    margin-top: 5px;
-    font-size: 0.95em;
-}
+.lang-en { color: #888; font-style: italic; display: block; margin-top: 5px; font-size: 0.95em; }
 
 /* 聯絡區塊 */
 .contact-box {
@@ -76,13 +87,27 @@ li { margin-bottom: 12px; font-size: 15px; }
     padding-top: 20px;
     border-top: 1px solid #333;
 }
-
 .update-date { font-size: 0.9em; color: #888; margin-bottom: 30px; }
 
-.brand {
-    font-size: 22px;
-    margin-bottom: 10px;
+.text-bold {
     font-weight: bold;
-    color: #fff;
-    text-align: center;
+    color: #fff; /* 讓加粗文字顏色稍微亮一點，與標題一致 */
+}
+
+
+/* --- 響應式設定：當寬度小於 600px 時 --- */
+@media (max-width: 600px) {
+    .container { padding: 15px; }
+    .logo { width: 80px; margin: 0 15px; }
+    
+    .images {
+        flex-direction: column; /* 改為上下垂直排列 */
+        align-items: center;
+    }
+    .images img {
+        width: 100%;           /* 圖片佔滿寬度 */
+        max-width: 100%;
+    }
+    
+    .header-line { display: none; } /* 手機版隱藏裝飾線讓空間更大 */
 }
