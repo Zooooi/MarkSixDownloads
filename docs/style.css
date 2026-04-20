@@ -53,7 +53,11 @@ h3{
 }
 
 /* 導航與連結 */
-.footer, .nav-header { margin: 20px auto; text-align: center; }
+.footer, .nav-header { 
+    margin: 20px auto; 
+    text-align: center; 
+}
+
 .footer a, .nav-header a { 
     color: #ccc; 
     text-decoration: underline; 
@@ -137,4 +141,17 @@ li { margin-bottom: 5px; font-size: 15px; }
 @media screen and (max-width: 600px) {
     .caption { display: block; margin-top: 10px; text-align: left;}
     ol { display: none; }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;   /* 改成上下排列 */
+        align-items: center;
+    }
+    .footer a {
+        display: block;           /* 每個連結獨佔一行 */
+        margin: 6px 0;
+    }
+    .footer a + a::before {
+        content: "";              /* 移除分隔符 | */
+    }
 }
