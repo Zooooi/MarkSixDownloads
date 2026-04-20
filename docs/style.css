@@ -32,7 +32,7 @@ body {
 }
 h1 { color: #fff; font-size: 24px; margin-bottom: 10px; }
 h2 { 
-    color: #eee; 
+    color: #ccc; 
     border-left: 4px solid #666; 
     padding-left: 15px; 
     margin-top: 40px; 
@@ -43,7 +43,7 @@ h2 {
 /* 導航與連結 */
 .footer, .nav-header { margin: 20px auto; text-align: center; }
 .footer a, .nav-header a { 
-    color: #eee; 
+    color: #ccc; 
     text-decoration: underline; 
     margin: 0 8px; 
     font-size: 14px;
@@ -78,7 +78,7 @@ a:hover { color: #aaa; text-decoration: underline; }
 
 ol { text-align: left; padding-inline-start: 2em; }
 li { margin-bottom: 12px; font-size: 15px; }
-.lang-en { color: #888; font-style: italic; display: block; margin-top: 5px; font-size: 0.95em; }
+.lang-en { color: #ccc; font-style: italic; display: block; margin-top: 5px; font-size: 0.95em; }
 
 /* 聯絡區塊 */
 .contact-box {
@@ -91,7 +91,6 @@ li { margin-bottom: 12px; font-size: 15px; }
 
 .text-bold {
     font-weight: bold;
-    color: #fff; /* 讓加粗文字顏色稍微亮一點，與標題一致 */
 }
 
 
