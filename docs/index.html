@@ -1,129 +1,118 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <link rel="icon" href="favicon.ico" type="image/png">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
     <title>Mark 6 Stats</title>
-    <style>
-        body {
-            background-color: black;
-            color: #EEE;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        .logo { width: 120px; margin: 20px auto; }
-        .brand { font-size: 22px; margin-bottom: 10px; }
-        .intro { max-width: 800px; margin: 0 auto 20px; line-height: 1.2em; }
-        .section { margin: 40px auto; max-width: 850px; }
-        .section hr { width: 30%; display: inline-block; vertical-align: middle; border: 0; border-top: 1px solid #666; }
-        .section img.icon { width: 50px; vertical-align: middle; margin: 0 10px; }
-        .images img { width: 45%; max-width: 450px; margin: 5px; }
-        .section ol { text-align: left; margin-top: 15px; }
-        .section li { margin-bottom: 12px; }
-        .footer { margin-top: 20px;  }
-        .footer a { color: #EEE; text-decoration: none; margin: 0 8px; text-decoration: underline;}
-        .footer a:hover { text-decoration: underline; }
-        .copyright { margin-top: 10px; font-size: 12px; color: #AAA; }
-        .lang-en {
-            color: #aaa;
-            font-style: italic;
-            display: block;
-            margin-top: 5px;
-            }
-    </style>
 </head>
 <body>
-    <img src="images/site_logo.webp" alt="Mark 6 Stats Logo" class="logo">
-    <div class="brand">Mark 6 Stats</div>
-    <div class="intro">
-        Mark 6 Stats 基於去中心化理念，整合所有紀錄為本地數據模型，提供快速統計查詢、號碼篩選、記錄管理與自動兌獎功能。本應用程式不涉及任何金錢交易，並永久免費使用。<br>
-        <span class="lang-en">Mark 6 Stats is built on a decentralized concept, integrating all records into a local data model to provide fast statistical queries, number filtering, record management, and automatic prize checking. This application does not involve any monetary transactions and is permanently free to use.</span>
-    </div>
-    <div class="footer">
-        此應用程式使用 Google OAuth 進行登錄，以安全地存取您的帳戶。<br>
-        <span class="lang-en">This app uses Google OAuth for login to securely access your account.</span>
-        <p></p>
-        <a href="./terms-of-service.html">服務條款 Terms of Service</a> |
-        <a href="./privacy-policy.html">隱私權政策 Privacy Policy</a> 
-    </div>
-    <!-- 第一組 -->
-    <div class="section">
-        <hr><img src="images/icon1.webp" alt="Icon 1" class="icon"><hr>
-        <div class="images">
-            <img src="images/intro_1-1.webp" alt="Intro 1-1">
-            <img src="images/intro_1-2.webp" alt="Intro 1-2">
+    <div class="container">
+        <img src="images/site_logo.webp" alt="Mark 6 Stats Logo" class="logo">
+        <div class="brand">Mark 6 Stats</div>
+        
+        <div class="intro">
+            Mark 6 Stats 基於去中心化理念，整合所有紀錄為本地數據模型，提供快速統計查詢、號碼篩選、記錄管理與自動兌獎功能。本應用程式不涉及任何金錢交易，並永久免費使用。<br>
+            <span class="lang-en">Mark 6 Stats is built on a decentralized concept, integrating all records into a local data model to provide fast statistical queries, number filtering, record management, and automatic prize checking. This application does not involve any monetary transactions and is permanently free to use.</span>
         </div>
-        <ol>
-            <li>點擊號碼可設定為忽略或鎖定，按主按鍵即可生成多組隨機號碼，可選擇是否允許重複，並能記錄以供系統在開獎時自動兌獎。
-            <span class="lang-en">Tap numbers to mark them as ignored or locked. Press the main button to generate multiple random numbers, choose whether to allow duplicates, and save results for automatic prize checking.</span>
-            </li>
-            <li>切換至簡單統計版面，調整期數即可查看各號碼的出現頻率，透過點擊進行篩選。
-            <span class="lang-en">Switch to the simple statistics view to see the frequency of each number, adjust the number of periods, and use tapping to filter.</span>
-            </li>
-        </ol>
-    </div>
 
-    <!-- 第二組 -->
-    <div class="section">
-        <hr><img src="images/icon2.webp" alt="Icon 2" class="icon"><hr>
-        <div class="images">
-            <img src="images/intro_2-1.webp" alt="Intro 2-1">
-            <img src="images/intro_2-2.webp" alt="Intro 2-2">
+        <div class="footer">
+            此應用程式使用 Google OAuth 進行登錄，以安全地存取您的帳戶。<br>
+            <span class="lang-en">This app uses Google OAuth for login to securely access your account.</span>
+            <p></p>
+            <a href="./terms-of-service.html">服務條款 Terms of Service</a> |
+            <a href="./privacy-policy.html">隱私權政策 Privacy Policy</a> 
         </div>
-        <ol>
-            <li>由於運行本地數據庫，可迅速翻查歷年開獎紀錄，並即時比對，顯示四獎以上的相似紀錄。
-            <span class="lang-en">By running a local database, past draw records can be quickly retrieved and instantly compared, showing similar records of fourth prize or above.</span> 
-            </li>
-            <li>對每一個開獎紀錄都提供全面統計分析，可切換至開獎號碼或包括特別號碼的統計，結果即時一目了然。
-            <span class="lang-en">Each draw record comes with a full statistical analysis. You can switch between draw numbers or include special numbers in the statistics.</span> 
-            </li>
-        </ol>
-    </div>
 
-    <!-- 第三組 -->
-    <div class="section">
-        <hr><img src="images/icon3.webp" alt="Icon 3" class="icon"><hr>
-        <div class="images">
-            <img src="images/intro_3-1.webp" alt="Intro 3-1">
-            <img src="images/intro_3-2.webp" alt="Intro 3-2">
+        <div class="section">
+            <div class="header-wrapper">
+                <div class="header-line"></div>
+                <img src="images/icon1.webp" alt="Icon 1" class="icon">
+                <div class="header-line"></div>
+            </div>
+            <div class="images">
+                <img src="images/intro_1-1.webp" alt="Intro 1-1">
+                <img src="images/intro_1-2.webp" alt="Intro 1-2">
+            </div>
+            <ol>
+                <li>點擊號碼可設定為忽略或鎖定，按主按鍵即可生成多組隨機號碼，可選擇是否允許重複，並能記錄以供系統在開獎時自動兌獎。
+                <span class="lang-en">Tap numbers to mark them as ignored or locked. Press the main button to generate multiple random numbers, choose whether to allow duplicates, and save results for automatic prize checking.</span>
+                </li>
+                <li>切換至簡單統計版面，調整期數即可查看各號碼的出現頻率，透過點擊進行篩選。
+                <span class="lang-en">Switch to the simple statistics view to see the frequency of each number, adjust the number of periods, and use tapping to filter.</span>
+                </li>
+            </ol>
         </div>
-        <ol>
-            <li>隨意按年、月或每期範圍，即可查看詳細統計結果。另有專項統計，包括最高獎金、最多人中獎，以及最多相似紀錄。
-            <span class="lang-en">You can freely select the year, month, or range of draws to view detailed statistical results.</span>
-            </li>
-            <li>每個範圍都有不少有趣的數據，等你去發現隨機號碼所產生的各種奇妙組合。
-            <span class="lang-en">Each range contains plenty of interesting data, inviting you to explore the fascinating combinations created by random numbers.</span>
-            </li>
-        </ol>
-    </div>
 
-    <!-- 第四組 -->
-    <div class="section">
-        <hr><img src="images/icon4.webp" alt="Icon 4" class="icon"><hr>
-        <div class="images">
-            <img src="images/intro_4-1.webp" alt="Intro 4-1">
-            <img src="images/intro_4-2.webp" alt="Intro 4-2">
+        <div class="section">
+            <div class="header-wrapper">
+                <div class="header-line"></div>
+                <img src="images/icon2.webp" alt="Icon 2" class="icon">
+                <div class="header-line"></div>
+            </div>
+            <div class="images">
+                <img src="images/intro_2-1.webp" alt="Intro 2-1">
+                <img src="images/intro_2-2.webp" alt="Intro 2-2">
+            </div>
+            <ol>
+                <li>由於運行本地數據庫，可迅速翻查歷年開獎紀錄，並即時比對，顯示四獎以上的相似紀錄。
+                <span class="lang-en">By running a local database, past draw records can be quickly retrieved and instantly compared, showing similar records of fourth prize or above.</span> 
+                </li>
+                <li>對每一個開獎紀錄都提供全面統計分析，可切換至開獎號碼或包括特別號碼的統計，結果即時一目了然。
+                <span class="lang-en">Each draw record comes with a full statistical analysis. You can switch between draw numbers or include special numbers in the statistics.</span> 
+                </li>
+            </ol>
         </div>
-        <ol>
-            <li>系統會根據您的記錄，在開獎時間自動兌獎，並清楚顯示每個中獎號碼及其所獲獎項。
-            <span class="lang-en">The system will automatically check your records at draw time and clearly display each winning number.</span>
-                
-            </li>
-            <li>所有數據只會儲存在您的手機內，為保險起見，您亦可選擇備份到 Google Drive。只有三個簡單操作：上傳、下載、刪除。
-            <span class="lang-en">All data will only be stored on your device. For extra security, you may also choose to back it up to Google Drive.</span>
-            </li>
-        </ol>
-    </div>
 
-    <div class="footer">
-        <div class="copyright">
-            © 2022-<span id="current-year"></span> Mark 6 Stats. All rights reserved.
+        <div class="section">
+            <div class="header-wrapper">
+                <div class="header-line"></div>
+                <img src="images/icon3.webp" alt="Icon 3" class="icon">
+                <div class="header-line"></div>
+            </div>
+            <div class="images">
+                <img src="images/intro_3-1.webp" alt="Intro 3-1">
+                <img src="images/intro_3-2.webp" alt="Intro 3-2">
+            </div>
+            <ol>
+                <li>隨意按年、月或每期範圍，即可查看詳細統計結果。另有專項統計，包括最高獎金、最多人中獎，以及最多相似紀錄。
+                <span class="lang-en">You can freely select the year, month, or range of draws to view detailed statistical results.</span>
+                </li>
+                <li>每個範圍都有不少有趣的數據，等你去發現隨機號碼所產生的各種奇妙組合。
+                <span class="lang-en">Each range contains plenty of interesting data, inviting you to explore the fascinating combinations created by random numbers.</span>
+                </li>
+            </ol>
         </div>
-        <script>
-            document.getElementById("current-year").textContent = new Date().getFullYear();
-        </script>
+
+        <div class="section">
+            <div class="header-wrapper">
+                <div class="header-line"></div>
+                <img src="images/icon4.webp" alt="Icon 4" class="icon">
+                <div class="header-line"></div>
+            </div>
+            <div class="images">
+                <img src="images/intro_4-1.webp" alt="Intro 4-1">
+                <img src="images/intro_4-2.webp" alt="Intro 4-2">
+            </div>
+            <ol>
+                <li>系統會根據您的記錄，在開獎時間自動兌獎，並清楚顯示每個中獎號碼及其所獲獎項。
+                <span class="lang-en">The system will automatically check your records at draw time and clearly display each winning number.</span>
+                </li>
+                <li>所有數據只會儲存在您的手機內，為保險起見，您亦可選擇備份到 Google Drive。只有三個簡單操作：上傳、下載、刪除。
+                <span class="lang-en">All data will only be stored on your device. For extra security, you may also choose to back it up to Google Drive.</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <div class="copyright">
+                © 2022-<span id="current-year"></span> Mark 6 Stats. All rights reserved.
+            </div>
+            <script>
+                document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>
+        </div>
     </div>
 </body>
 </html>

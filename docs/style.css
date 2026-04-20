@@ -1,0 +1,88 @@
+/* 基礎設定 */
+body {
+    background-color: #000;
+    color: #ccc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* 容器與佈局 */
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background-color: #111;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-align: center; /* 預設居中，適合首頁 */
+}
+
+/* 條款與政策頁面專用的靠左對齊類 */
+.text-left {
+    text-align: left;
+}
+
+/* 標題設定 */
+h1 { color: #fff; font-size: 24px; margin-bottom: 10px; }
+h2 { 
+    color: #eee; 
+    border-left: 4px solid #666; 
+    padding-left: 15px; 
+    margin-top: 40px; 
+    font-size: 20px; 
+    text-align: left;
+}
+
+/* 導航與連結 */
+.footer, .nav-header { margin: 20px auto; text-align: center; }
+.footer a, .nav-header a { 
+    color: #eee; 
+    text-decoration: underline; 
+    margin: 0 8px; 
+    font-size: 14px;
+}
+a { color: #4da6ff; text-decoration: none; }
+a:hover { color: #aaa; text-decoration: underline; }
+
+/* LOGO 與裝飾線 */
+.header-wrapper { display: flex; align-items: center; justify-content: center; margin: 20px 0; }
+.header-line { flex: 1; height: 1px; background-color: #444; }
+.logo { width: 120px; margin: 0 30px; }
+
+/* 內容區塊 (首頁用) */
+.intro { max-width: 800px; margin: 0 auto 20px; font-size: 15px; }
+.section { margin: 40px auto; }
+.section img.icon { width: 50px; vertical-align: middle; margin: 0 10px; }
+.images img { width: 45%; max-width: 450px; margin: 5px; border-radius: 8px; }
+ol { text-align: left; padding-inline-start: 2em; }
+li { margin-bottom: 12px; font-size: 15px; }
+
+/* 中英對照樣式 */
+.lang-en {
+    color: #888;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+/* 聯絡區塊 */
+.contact-box {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.update-date { font-size: 0.9em; color: #888; margin-bottom: 30px; }
+
+.brand {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
