@@ -51,7 +51,7 @@ h3{
 .footer a, .nav-header a { 
     color: #ccc; 
     text-decoration: underline; 
-    margin: 0 8px; 
+    margin: 8px 8px; 
     font-size: 14px;
 }
 a { color: #4da6ff; text-decoration: none; }
