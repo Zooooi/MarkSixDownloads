@@ -24,7 +24,10 @@ body {
 
 /* 標題與品牌 */
 .brand {
-    font-size: 22px;
+    font-family: "Playfair";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
     margin-bottom: 10px;
     font-weight: bold;
     color: #fff;
