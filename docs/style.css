@@ -54,7 +54,7 @@ h3{
 
 /* 導航與連結 */
 .footer, .nav-header { 
-    margin: 20px auto; 
+    margin: 18px auto; 
     text-align: center; 
 }
 
@@ -63,6 +63,11 @@ h3{
     text-decoration: underline; 
     margin: 8px 8px; 
     font-size: 14px;
+}
+.footer a + a::before {
+    content: "|";
+    padding-right: 18px;
+    color: #ccc;
 }
 a { color: #4da6ff; text-decoration: none; }
 a:hover { color: #aaa; text-decoration: underline; }
@@ -134,24 +139,11 @@ li { margin-bottom: 5px; font-size: 15px; }
 
 @media screen and (min-width: 601px) {
     .caption { display: none; }
-    ol { display: block; }
+    .index ol { display: block; }
 }
 
 /* 手機版：顯示 caption，隱藏 ol */
 @media screen and (max-width: 600px) {
     .caption { display: block; margin-top: 10px; text-align: left;}
-    ol { display: none; }
-    
-    .footer {
-        display: flex;
-        flex-direction: column;   /* 改成上下排列 */
-        align-items: center;
-    }
-    .footer a {
-        display: block;           /* 每個連結獨佔一行 */
-        margin: 6px 0;
-    }
-    .footer a + a::before {
-        content: "";              /* 移除分隔符 | */
-    }
+    .index ol { display: none; }
 }
