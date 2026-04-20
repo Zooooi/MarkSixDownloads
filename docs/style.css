@@ -77,16 +77,26 @@ a:hover { color: #aaa; text-decoration: underline; }
 .images {
     display: flex;          /* 使用 Flex 佈局 */
     justify-content: center;
-    gap: 10px;             /* 圖片之間的間距 */
+    gap: 10px;              /* 圖片之間的間距 */
     margin: 15px 0;
+    flex-wrap: wrap;        /* 小螢幕時自動換行 */
 }
+
+.images > div {
+    display: flex;
+    flex-direction: column;   /* 改成上下排列 */
+    align-items: center;      /* 置中對齊 */
+    flex: 1 1 0;              /* 平均分配寬度 */
+}
+
 .images img {
-    width: 48%;            /* 橫排時佔接近一半 */
-    max-width: 450px;
+    width: 100%;              /* 佔滿容器寬度 */
+    max-width: 450px;         /* 不超過 450px */
     height: auto;
     border-radius: 8px;
     border: 1px solid #333;
 }
+
 
 ol { text-align: left; padding-inline-start: 2em; }
 li { margin-bottom: 5px; font-size: 15px; }
@@ -116,4 +126,15 @@ li { margin-bottom: 5px; font-size: 15px; }
     }
     
     .header-line { display: none; } /* 手機版隱藏裝飾線讓空間更大 */
+}
+
+@media screen and (min-width: 601px) {
+    .caption { display: none; }
+    ol { display: block; }
+}
+
+/* 手機版：顯示 caption，隱藏 ol */
+@media screen and (max-width: 600px) {
+    .caption { display: block; margin-top: 10px; text-align: left;}
+    ol { display: none; }
 }
