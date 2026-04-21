@@ -103,9 +103,9 @@ a:hover { color: #aaa; text-decoration: underline; }
 }
 
 
-ol { text-align: left; padding-inline-start: 2em; }
-li { margin-bottom: 5px; font-size: 15px; }
-.lang-en { color: #ccc; font-style: italic; display: block; margin-top: 5px; font-size: 0.95em; }
+ol { text-align: left; padding-inline-start: 2em; margin-bottom: 15px;}
+li { margin-bottom: 10px; font-size: 15px; }
+.lang-en { color: #ccc; font-style: italic; display: block; font-size: 0.95em; }
 
 /* 聯絡區塊 */
 .contact-box {
