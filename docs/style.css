@@ -136,10 +136,13 @@ li { margin-bottom: 10px; font-size: 15px; }
 @media screen and (min-width: 601px) {
     .caption { display: none; }
     .index ol { display: block; }
+    
 }
 
 /* 手機版：顯示 caption，隱藏 ol */
 @media screen and (max-width: 600px) {
     .caption { display: block; margin-top: 10px; text-align: left;}
     .index ol { display: none; }
+    .autohide{ display: none; }
+    .menu a{display: block;}
 }
