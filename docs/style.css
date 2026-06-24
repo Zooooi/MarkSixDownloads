@@ -102,7 +102,6 @@ a:hover { color: #aaa; text-decoration: underline; }
     border: 1px solid #333;
 }
 
-
 ol { text-align: left; padding-inline-start: 2em; margin-bottom: 15px;}
 li { margin-bottom: 10px; font-size: 15px; }
 .lang-en { color: #ccc; font-style: italic; display: block; font-size: 0.95em; }
