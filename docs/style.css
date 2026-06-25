@@ -115,6 +115,26 @@ li { margin-bottom: 10px; font-size: 15px; }
 }
 .update-date { font-size: 0.9em; color: #888; margin-bottom: 30px; }
 
+
+.socal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;                  /* 兩個鏈結之間留空 */
+}
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 28px;
+}
+.link img {
+    width: 32px;   /* 統一大小 */
+    height: 32px;
+    margin-right: 8px;
+}
+
 /* --- 響應式設定：當寬度小於 600px 時 --- */
 @media (max-width: 600px) {
     .container { padding: 15px; }
