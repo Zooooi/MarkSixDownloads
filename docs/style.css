@@ -127,11 +127,11 @@ li { margin-bottom: 10px; font-size: 15px; }
     align-items: center;
     text-decoration: none;
     color: #aaa;
-    font-size: 28px;
+    font-size: 22px;
 }
 .socal-links img {
-    width: 32px;   /* 統一大小 */
-    height: 32px;
+    width: 24px;   /* 統一大小 */
+    height: 24px;
     margin-right: 8px;
 }
 
