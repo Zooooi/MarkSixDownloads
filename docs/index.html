@@ -64,14 +64,15 @@
         
         <div class="brand title">Mark 6 Stats</div>
     
-        <!-- Android Logo 按鈕 -->
+        
         <div class="app-download-btn">
+            <!-- Android Logo 按鈕 -->
             <img src="images/logo-android-4096.png" 
                 alt="Android App" 
                 onclick="showQrModal('images/qrcode-android.png', 
                 'https://play.google.com/store/apps/details?id=com.mark6stats.app', 
                 'Google Play', 
-                'Scan the QR code')">
+                '')">
         </div>
         
         <!-- 動態內容會塞入呢度 -->
@@ -82,9 +83,9 @@
     <div id="qr-modal" class="modal-overlay" onclick="closeQrModal(event)">
         <div class="modal-content">
             <span class="modal-close" onclick="closeQrModal(event, true)">&times;</span>
-            <h3 id="modal-title" class="modal-title"></h3> <!-- 💡 動態標題 -->
-            <img id="modal-qr-img" src="" alt="QR Code">
             <p><a id="modal-play-link" href="" target="_blank" rel="noopener noreferrer"></a></p> <!-- 💡 動態連結文字 -->
+            <img id="modal-qr-img" src="" alt="QR Code">
+            <p id="modal-title" class="modal-title"></p> 
         </div>
     </div>
 </body>
