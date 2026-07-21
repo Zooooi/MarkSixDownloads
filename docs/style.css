@@ -135,6 +135,100 @@ li { margin-bottom: 10px; font-size: 15px; }
     margin-right: 8px;
 }
 
+
+/* Android Logo 容器樣式 */
+.app-download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.app-download-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.app-download-btn img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal 遮罩層 (預設隱藏) */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 顯示 Modal */
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Modal 內容盒 */
+.modal-content {
+    background-color: #222; /* 配合暗色主題 */
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
+    max-width: 90%;
+    width: 280px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* X 關閉按鈕 */
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #fff;
+}
+
+/* Modal 內的 QR Code 圖片 */
+.modal-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff; /* 確保 QR Code 有白底便於掃描 */
+    padding: 5px;
+}
+
+.modal-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.modal-content a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* --- 響應式設定：當寬度小於 600px 時 --- */
 @media (max-width: 600px) {
     .container { padding: 15px; }
