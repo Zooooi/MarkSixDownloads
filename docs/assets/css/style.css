@@ -113,6 +113,9 @@ li { margin-bottom: 10px; font-size: 15px; }
     padding-top: 20px;
     border-top: 1px solid #333;
 }
+.contact-box .developer{
+    width: 120px;
+}
 .update-date { font-size: 0.9em; color: #888; margin-bottom: 30px; }
 
 
