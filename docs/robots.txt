@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://app.mark6stats.com/sitemap.xml
