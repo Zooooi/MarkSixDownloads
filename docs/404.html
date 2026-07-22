@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 頁面未找到 / Page Not Found | Mark 6 Stats</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 24px;
+        }
+        .container {
+            max-width: 480px;
+            width: 100%;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+        .divider {
+            height: 1px;
+            background-color: #334155;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">404 ERROR</div>
+        <h1>404</h1>
+        
+        <!-- 中文部分 -->
+        <h2>找不到此頁面</h2>
+        <p>抱歉，你所訪問的網頁不存在或已被移除。</p>
+        
+        <div class="divider"></div>
+        
+        <!-- 英文部分 -->
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you are looking for doesn't exist or has been moved.</p>
+        
+        <!-- 返回首頁按鈕 -->
+        <a href="/" class="btn">返回首頁 / Back to Home</a>
+    </div>
+</body>
+</html>
