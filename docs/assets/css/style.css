@@ -99,7 +99,7 @@ a:hover { color: #aaa; text-decoration: underline; }
     max-width: 450px;         /* 不超過 450px */
     height: auto;
     border-radius: 8px;
-    border: 1px solid #333;
+    /* border: 1px solid #333;*/
 }
 
 ol { text-align: left; padding-inline-start: 2em; margin-bottom: 15px;}
