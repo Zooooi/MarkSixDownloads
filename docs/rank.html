@@ -362,7 +362,11 @@ function toggleAll(area, show){
 function rankDisplay(r){if(r===0) return '霸主 👑'; if(r===1) return '第1名 🥇 (狀元)'; if(r===2) return '第2名 🥈 (榜眼)'; if(r===3) return '第3名 🥉 (探花)'; return `第${r}名`;}
 function buildTable(){
   const hk = latest.HK || {}; const sg = latest.SG || {};
-  const fmt = (obj)=>Object.entries(obj).sort((a,b)=>a[1]-b[1]).map(([k,v],i)=>`${i+1} ${k}: ${rankDisplay(v)} (${v})`).join('<br>');
+  const fmt = (obj)=>Object.entries(obj).sort((a,b)=>a[1]-b[1]).map(([k,v],i)=>{
+    const encodedKw = encodeURIComponent(k);
+    const playUrl = "https://play.google.com/store/search?q=" + encodedKw + "&hl=zh_TW";
+    return (i + 1) + ' <a href="' + playUrl + '" target="_blank" class="text-sky-400 hover:underline font-semibold">' + k + '</a>: ' + rankDisplay(v) + ' (' + v + ')';
+  }).join('<br>');
   document.getElementById('hkTable').innerHTML = fmt(hk);
   document.getElementById('sgTable').innerHTML = fmt(sg);
 }
