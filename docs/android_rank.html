@@ -350,7 +350,7 @@ function makeDatasets(raw){
   return raw.map(d=>({
     label: d.kw, data: d.data, borderColor: d.color, backgroundColor: d.color,
     tension: 0.4, pointRadius: 5, pointHoverRadius: 7, fill: false, spanGaps: true,
-    clip: false, datalabels: {clip: false, display: true, align: 'top', anchor: 'end', offset: 6, color: '#facc15', font: {size:11, weight:'bold'}, formatter: v => v===0? '👑榜首 0' : v}
+    clip: false, datalabels: {clip: false, display: true, align: 'top', anchor: 'end', offset: 6, color: '#facc15', font: {size:11, weight:'bold'}, formatter: v => v===0? '👑' : v}
   }));
 }
 const commonOptions = {
