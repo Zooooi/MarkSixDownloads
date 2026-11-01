@@ -2,7 +2,7 @@
   "characters": [
     {
       "id": 0,
-      "img": "00.png",
+      "img": "00.webp",
       "name": [
         {"zh_hk": "段九姑娘", "zh_tw": "段九姑娘", "zh": "段九姑娘", "en": "Joanna Duan"}
       ],
@@ -20,7 +20,7 @@
     },
     {
       "id": 1,
-      "img": "01.png",
+      "img": "01.webp",
       "name": [
         {"zh_hk": "紫彌六媚", "zh_tw": "紫彌六媚", "zh": "紫弥六媚", "en": "Violet Tsz"}
       ],
@@ -38,7 +38,7 @@
     },
     {
       "id": 2,
-      "img": "02.png",
+      "img": "02.webp",
       "name": [
         {"zh_hk": "麒麟八荒", "zh_tw": "麒麟八荒", "zh": "麒麟八荒", "en": "Oscar Kei"}
       ],
@@ -56,7 +56,7 @@
     },
     {
       "id": 3,
-      "img": "03.png",
+      "img": "03.webp",
       "name": [
         {"zh_hk": "水火二蓉", "zh_tw": "水火二蓉", "zh": "水火二蓉", "en": "Ruby Shui"}
       ],
@@ -74,7 +74,7 @@
     },
     {
       "id": 4,
-      "img": "04.png",
+      "img": "04.webp",
       "name": [
         {"zh_hk": "獨孤七寒", "zh_tw": "獨孤七寒", "zh": "独孤七寒", "en": "Ethan Dugu"}
       ],
@@ -92,7 +92,7 @@
     },
     {
       "id": 5,
-      "img": "05.png",
+      "img": "05.webp",
       "name": [
         {"zh_hk": "塔羅西施", "zh_tw": "塔羅西施", "zh": "塔罗西施", "en": "Tara West"}
       ],
@@ -110,7 +110,7 @@
     },
     {
       "id": 6,
-      "img": "06.png",
+      "img": "06.webp",
       "name": [
         {"zh_hk": "嬌娜一星", "zh_tw": "嬌娜一星", "zh": "娇娜一星", "en": "Nancy Chiu"}
       ],
@@ -128,7 +128,7 @@
     },
     {
       "id": 7,
-      "img": "07.png",
+      "img": "07.webp",
       "name": [
         {"zh_hk": "三眼盲公", "zh_tw": "三眼盲公", "zh": "三眼盲公", "en": "Raymond Mo"}
       ],
