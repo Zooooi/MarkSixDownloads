@@ -2,6 +2,13 @@
   "characters": [
     {
       "id": 0,
+      "img": "00.png",
+      "name": [
+        {"zh_hk": "段九姑娘", "zh_tw": "段九姑娘", "zh": "段九姑娘", "en": "Joanna Duan"}
+      ],
+      "skill": [
+        {"zh_hk": "科學統計學、玄學總指揮", "zh_tw": "科學統計學、玄學總指揮", "zh": "科学统计学、玄学总指挥", "en": "Scientific Statistics, Chief Occult Officer"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "以數據科學家視角視抽獎為混沌動態系統，專注頻率分佈、均值回歸與概率密度函數。",
@@ -13,6 +20,13 @@
     },
     {
       "id": 1,
+      "img": "01.png",
+      "name": [
+        {"zh_hk": "紫彌六媚", "zh_tw": "紫彌六媚", "zh": "紫弥六媚", "en": "Violet Tsz"}
+      ],
+      "skill": [
+        {"zh_hk": "紫微斗數", "zh_tw": "紫微斗數", "zh": "紫微斗数", "en": "Zi Wei Dou Shu"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "從三方四正、化祿權科忌的星盤磁場出發，將號碼視為紫微星曜的運行軌跡。",
@@ -24,6 +38,13 @@
     },
     {
       "id": 2,
+      "img": "02.png",
+      "name": [
+        {"zh_hk": "麒麟八荒", "zh_tw": "麒麟八荒", "zh": "麒麟八荒", "en": "Oscar Kei"}
+      ],
+      "skill": [
+        {"zh_hk": "奇門遁甲", "zh_tw": "奇門遁甲", "zh": "奇门遁甲", "en": "Qi Men Dun Jia"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "以九宮八門、九星飛泊與天地盤交錯佈局，將號碼分佈視為排兵佈陣的沙盤推演。",
@@ -35,6 +56,13 @@
     },
     {
       "id": 3,
+      "img": "03.png",
+      "name": [
+        {"zh_hk": "水火二蓉", "zh_tw": "水火二蓉", "zh": "水火二蓉", "en": "Ruby Shui"}
+      ],
+      "skill": [
+        {"zh_hk": "五行學說", "zh_tw": "五行學說", "zh": "五行学说", "en": "Five Elements"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "將萬物歸納於金木水火土的相生相剋，以寒暑燥濕與干支納音解析號碼能量。",
@@ -46,6 +74,13 @@
     },
     {
       "id": 4,
+      "img": "04.png",
+      "name": [
+        {"zh_hk": "獨孤七寒", "zh_tw": "獨孤七寒", "zh": "独孤七寒", "en": "Ethan Dugu"}
+      ],
+      "skill": [
+        {"zh_hk": "八卦易經", "zh_tw": "八卦易經", "zh": "八卦易经", "en": "I Ching"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "從乾坤坎離、變爻體用與梅花易數出發，將號碼躍遷視為卦象與陰陽盈虧的循環。",
@@ -57,6 +92,13 @@
     },
     {
       "id": 5,
+      "img": "05.png",
+      "name": [
+        {"zh_hk": "塔羅西施", "zh_tw": "塔羅西施", "zh": "塔罗西施", "en": "Tara West"}
+      ],
+      "skill": [
+        {"zh_hk": "西洋塔羅 / 神秘學", "zh_tw": "西洋塔羅 / 神秘學", "zh": "西洋塔罗 / 神秘学", "en": "Tarot / Occult"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "以大阿爾卡那牌陣與宇宙能量共振為核心，將數據轉化為潛意識與能量流轉的啟示。",
@@ -68,6 +110,13 @@
     },
     {
       "id": 6,
+      "img": "06.png",
+      "name": [
+        {"zh_hk": "嬌娜一星", "zh_tw": "嬌娜一星", "zh": "娇娜一星", "en": "Nancy Chiu"}
+      ],
+      "skill": [
+        {"zh_hk": "十二星座 / 占星術", "zh_tw": "十二星座 / 占星術", "zh": "十二星座 / 占星术", "en": "Zodiac / Astrology"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "緊扣水星逆行、宮位相位與行星入廟軌跡，將號碼波動視為星體引力的牽引。",
@@ -79,6 +128,13 @@
     },
     {
       "id": 7,
+      "img": "07.png",
+      "name": [
+        {"zh_hk": "三眼盲公", "zh_tw": "三眼盲公", "zh": "三眼盲公", "en": "Raymond Mo"}
+      ],
+      "skill": [
+        {"zh_hk": "麻衣相法 / 觀相學", "zh_tw": "麻衣相法 / 觀相學", "zh": "麻衣相法 / 观相学", "en": "Face Reading"}
+      ],
       "core_thinking": [
         {
           "zh_hk": "將每個號碼視為有氣場與面相的生命體，以天庭地閣與氣色形態判斷吉凶貴賤。",
